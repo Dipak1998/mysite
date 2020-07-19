@@ -1,0 +1,70 @@
+:root{
+    --color-white-1: #fbfbfb;
+}
+div.body__background{
+    position: absolute;
+    background-image: url('assest/bgimg.jpg'); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    /* opacity: .7; */
+    filter: blur(3px) brightness(50%);
+}
+
+
+div.heading{
+    color:var(--color-white-1) ;
+    text-align: center;
+}
+
+
+
+div.edu-detail{
+    color: var(--color-white-1);
+    text-align: center;
+    /* display: flex; */
+    border-radius: 3px solid black;
+    box-shadow: 0 2px 5px rgba(0,0,0, 0.4);
+    margin-bottom: 20px;
+}
+div.edu-item{
+    flex: 1;
+    flex-direction: row;
+}
+div.border-line{
+    width: 100%;
+    border-radius: 1px solid rgb(117, 113, 113);
+}
+
+/* Mobile View */
+
+@media screen and (max-width: 600px) {
+
+    div.topnavbar{
+        display: flex;
+        padding: 0;
+    }
+    div.topnavbar div.nav_item{
+        flex: 1;
+        flex-direction: column;
+        font-size: 10px;
+    }
+    div.profile img{
+        width: 20%;
+        height: 15%;
+    }
+    div.intro{
+        text-align: center;
+        color:var(--color-white-1)
+        /* color: rgb(255, 255, 255); */
+    
+    }
+    div.social_icons{
+        margin-top: 25%;
+    }
+}

@@ -1,0 +1,76 @@
+body div.heading{
+    text-align: center;
+    color: var(--color-white-1);
+}
+
+.view-box{
+    /* background-color: rgb(136, 86, 86); */
+    color: var(--color-white-1);
+    text-align: center;
+    display: block;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0,0,0, 0.4);
+    margin-bottom: 20px;
+    padding: 2%;
+}
+
+
+div.view-box-item{
+    /* flex: 1; */
+    color: rgb(255, 255, 255);
+}
+
+div.border-line{
+    width: 100%;
+    border-radius: 1px solid rgb(117, 113, 113);
+}
+div.project-details div.heading{
+    color: aqua;
+}
+
+div.desc{
+    text-align: center;
+}
+
+div.project-show a{
+    color: aqua;
+}
+
+div.show-more button{
+    color: var(--color-white-1);
+    background-color: transparent;
+    position:relative;
+    top:50%; 
+    left:46%;
+    padding: 5px;
+    margin: 5px;
+}
+div.show-more button:hover{
+    background-color: green;
+    color: var(--color-white-1);
+    
+}
+
+/* Mobile View */
+
+@media screen and (max-width: 600px) {
+    div.view-box{
+        display: block;
+        height: 70vh;
+        overflow-y: auto;
+    }
+    div.show-more button{
+        color: var(--color-white-1);
+        background-color: transparent;
+        position:relative;
+        top:50%; 
+        left:30%;
+        padding: 5px;
+        margin: 5px;
+    
+    }
+    div.desc{
+        text-align: justify;
+    }
+
+}

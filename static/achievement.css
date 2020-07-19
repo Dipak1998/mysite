@@ -1,0 +1,17 @@
+body div.heading{
+    text-align: center;
+    color: var(--color-white-1);
+}
+.view-box{
+    /* background-color: rgb(136, 86, 86); */
+    color: var(--color-white-1);
+    text-align: center;
+    display: block;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0,0,0, 0.4);
+    margin-bottom: 20px;
+    padding: 2%;
+}
+div.flip-box-main{
+    padding: 0;
+}
