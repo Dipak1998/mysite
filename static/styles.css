@@ -114,7 +114,7 @@ div.social_icons .fa:hover{
     div.topnavbar div.nav_item{
         flex: 1;
         flex-direction: column;
-        font-size: 12px;
+        font-size: 10px;
     }
     div.profile img{
         width: 20%;
