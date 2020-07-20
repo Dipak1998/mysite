@@ -2,6 +2,10 @@
 body div.heading{
     text-align: center;
     color: var(--color-white-1);
+    
+}
+body div.heading h1{
+    margin: 0;
 }
 
 /* View Box Styling */

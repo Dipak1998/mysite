@@ -38,49 +38,42 @@
         </div>
         <div style="padding: 0 20%; ">
             <div class="contact-box message">
-                <form action="">
-                    <label for="text">Your Name:</label><input type="text" placeholder="Enter Your Name">
+                <form method="POST" action="" aria-required="true">
+                    <label for="text">Your Name :</label><input type="text" name="name" placeholder="Enter Your Name" >
                     <br>
-                    <label for="mail">Your Mail Id:</label><input type="mail" placeholder="Enter Your Mail id">
-
+                    <label for="mail">Your Mail Id:</label><input type="mail" name="mail" placeholder="Enter Your Mail id">
+                    <br>
+                    <label for="subject">Your Subject:</label><input type="text" name="subject"placeholder="Write your Subject">
                     <br>
 
                     <label for="text">Your Text</label>
                     <br>
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Write Your Message"></textarea>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Write Your Message"></textarea>
                     <br>
                     <input type="submit" class="submitbtn" value="Submit">
                 </form>
 
             </div>
-            <!-- <div class="contact-box">
-                <div class="mail">
-                    <h3><b>Gmail:</b></h3><a
-                        href="https://mail.google.com/mail/?view=cm&fs=1&to=garaidipak1998@gmail.com">garaidipak1998@gmail.com</a>
-                </div>
-                <div></div>
-                <div>
-                    <h3><b>Contact Number:</b></h3>8170941542
-                </div>
-                <div></div>
 
-            </div> -->
-            <!-- <div class="flip-box-main"> -->
             <div class="flip-box">
                 <div class="flip-box-inner">
                     <div class="flip-box-front">
                         <div class="contact-box">
-                            <div class="name">
-                                <i class="fa fa-home">Purulia,West Bengal</i>
-                            </div>
-                            <div class="mail">
-                                <i class="fa fa-envelope "></i><b>Gmail:</b><a
-                                    href="https://mail.google.com/mail/?view=cm&fs=1&to=garaidipak1998@gmail.com">garaidipak1998@gmail.com</a>
-                            </div>
-                            <div>
-                                <i class="fa fa-phone"></i><b>Contact Number:</b>8170941542
-                            </div>
-
+                            <address>
+                                <p>
+                                    <img src="/static/assest/dipak.jpg" alt="Avatar" class="avatar">
+                                    Dipak Garai
+                                </p>
+                                <p>
+                                    <i class="fa fa-home"></i>Purulia,West Bengal
+                                </p>
+                                <p>
+                                    <i class="fa fa-envelope "></i>Gmail:<a href="mailto:garaidipak1998@gmail.com">garaidipak1998@gmail.com</a>
+                                </p>
+                                <p>
+                                    <i class="fa fa-phone"></i><a href="tel:+918170941542"></a> Contact Number:8170941542
+                                </p>
+                            </address>
                         </div>
                     </div>
                     <div class="flip-box-back">
@@ -95,20 +88,8 @@
                     </div>
                 </div>
             </div>
-            <!-- </div> -->
 
         </div>
-        <!-- <h3 style="color:var(--color-white-1);text-align: center;">Follow Me On Social Media</h3>
-        <div class="social_icons" style="margin-top: 0;">
-            <a href="https://www.linkedin.com/in/dipak-garai-2718b9180/" class="fa fa-linkedin"></a>
-            <a href="https://www.facebook.com/deep.garai.92" class="fa fa-facebook"></a>
-            <a href="https://www.instagram.com/dipak.garai/" class="fa fa-instagram"></a>
-            <a href="https://twitter.com/DipakGarai13" class="fa fa-twitter"></a>
-            <a href="https://github.com/Dipak1998" class="fa fa-github"></a>
-        </div> -->
-
-
-
     </div>
 </body>
 

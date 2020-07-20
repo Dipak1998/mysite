@@ -1,26 +1,36 @@
 div.contact-box{
-    color: var(--color-white-1);
-    text-align: center;
-    /* display: flex; */
-    border-radius: 3px solid black;
-    box-shadow: 0 2px 5px rgba(0,0,0, 0.4);
-    /* text-shadow: 1px 1px 2px black, 0 0 25px rgb(10, 255, 255), 0 0 5px rgb(0, 139, 139); */
+  color: var(--color-white-1);
+  text-align: center;
+  /* display: flex; */
+  border-radius: 3px;
+  box-shadow: 0 2px 5px rgba(0,0,0, 0.4);
 
+}
+
+div.contact-box address{
+  display: inline-block;
+  margin: right;
+}
+div.contact-box>address>p>img{
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 }
 
 div.mail a{
-    color: var(--color-white-1);
+  color: var(--color-white-1);
 }
 
 div.message input,div.message textarea{
-    background-color: transparent;
-    color: var(--color-white-1);
-    padding: 5px;
-    margin: 5px;
+  background-color: transparent;
+  color: var(--color-white-1);
+  padding: 5px;
+  margin: 5px;
 }
 div.message textarea{
-    width: 36%;
-    height: 40%;
+  width: 36%;
+  height: 40%;
 }
 
 div.message input.submitbtn:hover{
@@ -30,84 +40,86 @@ color: var(--color-white-1);
 
 
 div.social_icons{
-    padding: 0;
-    margin: 0;
+  padding: 0;
+  margin: 0;
 }
 div.social_icons a{
-    margin-top: 0;
+  margin-top: 0;
 
 }
 div.social_icons .fa{
-    color: var(--color-white-1);
+  color: var(--color-white-1);
 }
 
 ::-webkit-input-placeholder { /* Edge */
-    color:var(--color-white-1);
-  }
+  color:var(--color-white-1);
+}
 
 /* Flip Box Styling */
 .flip-box {
-    background-color: transparent;
-    width: 300px;
-    height: 200px;
-    /* border: 1px solid #f1f1f1; */
-    perspective: 1000px;
-    padding-top: 1%;
-  }
-  
-  .flip-box-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
-    transition: transform 0.8s;
-    transform-style: preserve-3d;
-  }
-  
-  .flip-box:hover .flip-box-inner {
-    transform: rotateX(180deg);
-  }
-  
-  .flip-box-front, .flip-box-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-  }
-  
-  .flip-box-front {
-    background:linear-gradient(to bottom, rgb(85, 85, 155) 0%, white 100%);
-   
-    box-shadow: 10px 10px 5px rgb(92, 86, 86);
-  }
-  .flip-box-front div.contact-box{
-    color: rgb(25, 0, 255); 
-  }
-  
-  .flip-box-back {
-     background:linear-gradient(to bottom, aqua 0%, white 100%);
-    color: white;
-    transform: rotateX(180deg);
-    box-shadow: 10px 10px 5px rgb(92, 86, 86);
-  
-  }
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  /* border: 1px solid #f1f1f1; */
+  perspective: 1000px;
+  padding-top: 1%;
+  margin: 0 auto;
+  box-shadow: unset;
+}
+
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+  transform: rotateX(180deg);
+}
+
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  --webkit-backface-visibility: hidden;
+}
+
+.flip-box-front {
+  background:linear-gradient(to bottom, rgb(85, 85, 155) 0%, white 100%);
+ 
+  /* box-shadow: 10px 10px 5px rgb(92, 86, 86); */
+}
+.flip-box-front div.contact-box{
+  color: rgb(25, 0, 255); 
+}
+
+.flip-box-back {
+   background:linear-gradient(to bottom, aqua 0%, white 100%);
+  color: white;
+  transform: rotateX(180deg);
+  /* box-shadow: 10px 10px 5px rgb(92, 86, 86); */
+
+}
 
 
 /* Mobile View */
 
 @media screen and (max-width: 600px){
-    div.message textarea{
-        width: 60%;
-        height: 40%;
-    }
+  div.message textarea{
+      width: 60%;
+      height: 36%;
+  }
 
-     .flip-box {
-        background-color: transparent;
-        width: 230px;
-        height: 200px;
-        /* border: 1px solid #f1f1f1; */
-        perspective: 1000px;
-        padding-top: 4%;
-      } 
+   .flip-box {
+      background-color: transparent;
+      width: 230px;
+      height: 200px;
+      /* border: 1px solid #f1f1f1; */
+      perspective: 1000px;
+      padding-top: 4%;
+    } 
 
 }
