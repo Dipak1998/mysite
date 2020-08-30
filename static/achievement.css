@@ -10,8 +10,32 @@ body div.heading{
     border-radius: 3px;
     box-shadow: 0 2px 5px rgba(0,0,0, 0.4);
     margin-bottom: 20px;
-    padding: 2%;
-}
-div.flip-box-main{
+    /* padding: 2%; */
+    height: 70vh;
+    overflow-y: auto;
+} 
+/* div.flip-box-main{
     padding: 0;
+} */
+
+div.detail div.course-name{
+    color: aqua;
+}
+div.credential a{
+    color: aqua;
+}
+
+div.border-line{
+    width: 100%;
+    border-radius: 1px solid rgb(117, 113, 113);
+}
+
+/* Mobile View */
+
+@media screen and (max-width: 600px) {
+    div.view-box{
+        display: block;
+        height: 70vh;
+        overflow-y: auto;
+    }
 }

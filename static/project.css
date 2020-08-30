@@ -12,6 +12,8 @@ body div.heading{
     box-shadow: 0 2px 5px rgba(0,0,0, 0.4);
     margin-bottom: 20px;
     padding: 2%;
+    height: 70vh;
+    overflow-y: auto;
 }
 
 
